@@ -38,32 +38,6 @@ root.configure(bg='white')
 root.mainloop()
 
 """
-"""
-
-window = Tk()
-window.title("SHA_GUI_M0729017")
-
-lab1 = Label(window,text="明志科技大學",relief="raised")
-lab1_2 = Label(window,bg="yellow",width=20)
-
-lab2 = Label(window,text="長庚科技大學",relief="raised")
-lab2_2 = Label(window,bg="aqua",width=20)
-
-lab3 = Label(window,text="長庚大學",relief="raised")
-lab3_2 = Label(window,bg="Green",width=20)
-
-lab1.grid(row=0,column=0,padx=5,pady=5,sticky=W+E)
-lab1_2.grid(row=0,column=1,padx=5,pady=5)
-
-lab2.grid(row=1,column=0,padx=5)
-lab2_2.grid(row=1,column=1,padx=5)
-
-lab3.grid(row=2,column=0,padx=5)
-lab3_2.grid(row=2,column=1,padx=5)
-
-window.mainloop()
-
-"""
 def ChooseFile():
     global plain
     filename=tkinter.filedialog.askopenfilename()
