@@ -5,39 +5,6 @@ import sha2_gui
 from sha2_gui import *
 
 
-"""
-#print(tkinter.TkVersion)
-
-root = Tk()
-#Title
-root.title("SHA_GUI_M0729017")
-#size & local
-#root.geometry("800x600+100+100")
-
-#Label
-#fg:word color/bg:word background color/anchor:direction/wraplength:換行/font:字型/justify:靠左靠右
-lb = Label(root,bitmap="hourglass",compound="left",text="  Plz Input Data:",fg = "black",anchor="nw",font="helvetica 15",relief="raised",padx=5,pady=10)
-lb.pack()        #包裝與定位元件
-print(type(lb))  #傳回Label物件
-
-
-#Label
-#fg:word color/bg:word background color/anchor:direction/wraplength:換行/font:字型/justify:靠左靠右
-
-label = Label(root,text="I like tkinter,I like tkinter,I like tkinter",fg = "black",bg = "yellow",anchor="se",font="helvetica 10 bold",
-wraplength=80,justify="center")
-label.pack()        #包裝與定位元件
-print(type(label))  #傳回Label物件
-
-label_1 = Label(root,bitmap="hourglass")
-label_1.pack()
-
-
-#Background
-root.configure(bg='white')
-root.mainloop()
-
-"""
 def ChooseFile():
     global plain
     filename=tkinter.filedialog.askopenfilename()
