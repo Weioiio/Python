@@ -187,13 +187,14 @@ def mousemove(event, x, y, s, p):
 cv2.namedWindow("LSE mouse track&predict")
 cv2.setMouseCallback("LSE mouse track&predict", mousemove)
 
-k = cv2.KalmanFilter(4, 2) 
-#公式中的H
-k.measurementMatrix = np.array([[1, 0, 0, 0], [0, 1, 0, 0]], np.float32)
-#公式中的A
-k.transitionMatrix = np.array([[1, 0, 1, 0], [0, 1, 0, 1], [0, 0, 1, 0], [0, 0, 0, 1]], np.float32)
-#公式中的Q
-k.processNoiseCov = np.array([[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]], np.float32) * 0.03
+# 卡爾曼濾波器滑鼠預測區
+# k = cv2.KalmanFilter(4, 2) 
+# #公式中的H
+# k.measurementMatrix = np.array([[1, 0, 0, 0], [0, 1, 0, 0]], np.float32)
+# #公式中的A
+# k.transitionMatrix = np.array([[1, 0, 1, 0], [0, 1, 0, 1], [0, 0, 1, 0], [0, 0, 0, 1]], np.float32)
+# #公式中的Q
+# k.processNoiseCov = np.array([[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]], np.float32) * 0.03
 
 #Xn = A*Xn-1 + B + W
 #Zn = H*Xn + V
